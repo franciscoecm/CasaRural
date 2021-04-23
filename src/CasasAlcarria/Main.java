@@ -47,14 +47,7 @@ public class Main {
                     System.out.println("Ingrese la clave de la casa a eliminar: ");
                     clave = entrada.nextLine();
                     tabla.eliminar(clave);
-
-                    try {
-                        busqueda = tabla.buscar(clave);
-                        busqueda.muestra();
-                    } catch (Exception e) {
-                        System.out.println("Se dio de baja la casa");
-                    }
-                    break;
+                    
             }
         } while (opc != 4);
     }
