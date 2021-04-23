@@ -47,7 +47,10 @@ public class Main {
                     System.out.println("Ingrese la clave de la casa a eliminar: ");
                     clave = entrada.nextLine();
                     tabla.eliminar(clave);
-                    
+                    break;
+                default:
+                    System.out.println("Opción no válida.");
+                    break;
             }
         } while (opc != 4);
     }
